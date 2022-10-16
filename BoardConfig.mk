@@ -97,3 +97,6 @@ TW_INCLUDE_CRYPTO := true
 TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 TARGET_HW_DISK_ENCRYPTION := true
 
+# Keymaster
+TARGET_PROVIDES_KEYMASTER := true
+
