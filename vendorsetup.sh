@@ -16,5 +16,15 @@
 # limitations under the License.
 #
 
+export FOX_BUILD_TYPE="Unofficial"
+export OF_SCREEN_H=1920
+export OF_SCREEN_W=1080
+export OF_MAINTAINER="Ngtc233"
+export FOX_VERSION="R7.1_20221021"
+export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+export LC_ALL="C"
+export ALLOW_MISSING_DEPENDENCIES=true
+export FOX_USE_NANO_EDITOR=1
+
 add_lunch_combo omni_R9s-userdebug
 add_lunch_combo omni_R9s-eng
