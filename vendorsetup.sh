@@ -16,5 +16,9 @@
 # limitations under the License.
 #
 
+export ALLOW_MISSING_DEPENDENCIES=true
+export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+export LC_ALL="C"
+
 add_lunch_combo omni_R9s-userdebug
 add_lunch_combo omni_R9s-eng
