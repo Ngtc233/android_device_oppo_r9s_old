@@ -19,4 +19,3 @@ Rear Camera  | 16.0 MP, LED flash
 Front Camera | 16.0 MP
 Release Date | October 2016
 
-![Xiaomi Redmi 4[IN]/4X](https://ibb.co/dkQLJ5B "Oppo R9s/sk")
