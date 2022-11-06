@@ -11,9 +11,9 @@ GPU     | Adreno 506
 Memory  | 4 GB
 Shipped Android Version | Android 6.0.1 with ColorOS 3.0
 Storage | 64 GB
-MicroSD | Up to 128 GB (Hybrid)
+MicroSD | Up to 128 GB
 Battery | 3010 mAh (non-removable)
-Dimensions | 139.2 x 70 x 8.7 mm
+Dimensions | 153 × 74.3 × 6.58 mm
 Display | 1080 x 1920 pixels, 5.5" IPS
 Rear Camera  | 16.0 MP, LED flash
 Front Camera | 16.0 MP
