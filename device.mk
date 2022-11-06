@@ -17,7 +17,3 @@
 #
 
 LOCAL_PATH := device/oppo/R9s
-
-# OPPO
-PRODUCT_PACKAGES += \
-    ozip_decrypt
