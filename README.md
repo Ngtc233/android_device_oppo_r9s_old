@@ -18,4 +18,3 @@ Display | 1080 x 1920 pixels, 5.5" IPS
 Rear Camera  | 16.0 MP, LED flash
 Front Camera | 16.0 MP
 Release Date | October 2016
-
