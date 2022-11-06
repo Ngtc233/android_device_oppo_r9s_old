@@ -18,3 +18,5 @@ Display | 1080 x 1920 pixels, 5.5" IPS
 Rear Camera  | 16.0 MP, LED flash
 Front Camera | 16.0 MP
 Release Date | October 2016
+
+![Oppo R9s](https://i.ibb.co/1R9dJmZ/22840bb277a236c041002e7ad33d202ad618764d3c93a8748e74c4e8f9c82ae6-0.webp)
