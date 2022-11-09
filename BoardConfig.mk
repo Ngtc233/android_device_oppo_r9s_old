@@ -18,9 +18,6 @@
 
 DEVICE_PATH := device/oppo/R9s
 
-# For building with minimal manifest
-ALLOW_MISSING_DEPENDENCIES := true
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -90,6 +87,11 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 200
+TW_SCREEN_BLANK_ON_BOOT := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TW_EXCLUDE_SUPERSU := true
+TW_EXCLUDE_TWRPAPP := true
 
 # Crypto
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
@@ -97,4 +99,17 @@ TARGET_HW_DISK_ENCRYPTION := true
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
+
+# Encryption
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
+
+
+# Qualcomm support
+BOARD_USES_QCOM_HARDWARE := true
+
+# exFAT FS Support
+TW_INCLUDE_FUSE_EXFAT := true
+
+# NTFS Support
+TW_INCLUDE_FUSE_NTFS := true
 
