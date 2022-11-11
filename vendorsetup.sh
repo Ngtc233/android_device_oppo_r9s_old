@@ -15,6 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+export OF_FORCE_PREBUILT_KERNEL=1
 
 add_lunch_combo omni_R9s-userdebug
 add_lunch_combo omni_R9s-eng
