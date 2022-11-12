@@ -92,7 +92,6 @@ TW_EXCLUDE_SUPERSU := true
 TW_EXCLUDE_TWRPAPP := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 RECOVERY_SDCARD_ON_DATA := true
-TW_INCLUDE_CRYPTO := true
 
 # Crypto
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
