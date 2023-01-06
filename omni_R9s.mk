@@ -29,6 +29,10 @@ $(call inherit-product, device/oppo/R9s/device.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
+# Encryption
+PRODUCT_PACKAGES += \
+    libcryptfs_hw
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := R9s
 PRODUCT_NAME := omni_R9s
