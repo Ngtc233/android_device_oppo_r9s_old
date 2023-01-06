@@ -93,18 +93,11 @@ TW_EXCLUDE_TWRPAPP := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 RECOVERY_SDCARD_ON_DATA := true
 
-# Crypto
+# For Data Decryption
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 TARGET_HW_DISK_ENCRYPTION := true
-
-# Keymaster
 TARGET_PROVIDES_KEYMASTER := true
-
-# Encryption
-TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
-
-
-# Qualcomm support
+TW_INCLUDE_CRYPTO := true
 BOARD_USES_QCOM_HARDWARE := true
 
 # exFAT FS Support
