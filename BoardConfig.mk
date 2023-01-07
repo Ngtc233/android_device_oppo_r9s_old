@@ -94,7 +94,7 @@ TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 RECOVERY_SDCARD_ON_DATA := true
 
 # For Data Decryption
-TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
+
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_PROVIDES_KEYMASTER := true
@@ -108,5 +108,5 @@ TW_INCLUDE_FUSE_EXFAT := true
 # NTFS Support
 TW_INCLUDE_FUSE_NTFS := true
 
-LC_ALL := C
+
 
