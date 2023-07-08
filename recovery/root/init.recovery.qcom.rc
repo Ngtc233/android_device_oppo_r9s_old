@@ -1,19 +1,22 @@
-on init
-    chmod 0660 /dev/qseecom
-    chown system drmrpc /dev/qseecom
-    chmod 0664 /dev/ion
-    chown system system /dev/ion
-    write /proc/touchpanel/double_tap_enable 1
-    write /sys/class/power_supply/usb/otg_switch 1
+on property:ro.crypto.state=encrypted
+    stop qseecomd
+    start qseecomd
 
-# separate copy needed to use /sbin/linker64 instead of /system/bin/linker64
-service sbinqseecomd /sbin/qseecomd
-    oneshot
-    disabled
+service qseecomd /sbin/qseecomd
     user root
     group root
     seclabel u:r:recovery:s0
 
-on property:ro.crypto.state=encrypted
-    start sbinqseecomd
+on boot
+    exec u:r:recovery:s0 -- /sbin/busybox rm -r /dev/block/bootdevice
+    symlink /dev/block/platform/7824900.sdhci /dev/block/bootdevice
+
+
+on fs
+    symlink /dev/block/platform/7824900.sdhci /dev/block/bootdevice
+
+    chmod 0660 /dev/qseecom
+    chown system drmrpc /dev/qseecom
+    chmod 0664 /dev/ion
+    chown system system /dev/ion
 
