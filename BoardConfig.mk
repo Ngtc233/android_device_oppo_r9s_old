@@ -92,12 +92,12 @@ TW_EXCLUDE_SUPERSU := true
 TW_EXCLUDE_TWRPAPP := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 RECOVERY_SDCARD_ON_DATA := true
-TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 TARGET_PROVIDES_KEYMASTER := true
 TW_INCLUDE_CRYPTO := true
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_HW_DISK_ENCRYPTION := true
 TW_MAX_BRIGHTNESS := 1023
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 
 # exFAT FS Support
 TW_INCLUDE_FUSE_EXFAT := true
