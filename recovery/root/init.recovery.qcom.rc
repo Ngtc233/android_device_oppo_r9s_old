@@ -1,22 +1,5 @@
-on property:ro.crypto.state=encrypted
-    stop qseecomd
-    start qseecomd
-
-service qseecomd /sbin/qseecomd
-    user root
-    group root
-    seclabel u:r:recovery:s0
-
-on boot
-    exec u:r:recovery:s0 -- /sbin/busybox rm -r /dev/block/bootdevice
-    symlink /dev/block/platform/7824900.sdhci /dev/block/bootdevice
-
+import init.recovery.twrp.rc
 
 on fs
-    symlink /dev/block/platform/7824900.sdhci /dev/block/bootdevice
-
-    chmod 0660 /dev/qseecom
-    chown system drmrpc /dev/qseecom
-    chmod 0664 /dev/ion
-    chown system system /dev/ion
-
+    wait /dev/block/platform/soc/${ro.boot.bootdevice}
+    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
