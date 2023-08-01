@@ -17,3 +17,6 @@
 #
 
 LOCAL_PATH := device/oppo/R9s
+
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
